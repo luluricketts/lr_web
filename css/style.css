@@ -1,0 +1,32 @@
+body{
+	border: 30px solid black;
+	margin: 0px;
+	height: 1000px;
+}
+.navbar{
+	background-color: black;
+	border: 1px solid black;
+	border-bottom: 10px solid black;
+	border-radius: 0px;
+}
+.navbutton{
+	background-color: #c73000;
+	border: 2px solid #ffdf00;
+	text-align: center;
+	border-radius: 50%;
+	font-family: 'Niconne', cursive;
+	font-size: 120%;
+	width: 90%;
+}
+.navbutton:hover {
+	background-color: #ffdf00;
+	color: #c73000;
+}
+
+h1{
+	font-family: 'Niconne', cursive;
+	text-align: center;
+	font-size: 400%;
+	color: #c73000;
+	margin-bottom: 20px;
+}
