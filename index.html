@@ -1,19 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Lulu Ricketts</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-<div class="navbar">
-	<h1>Lulu Ricketts</h1>
-	<div class="col-sm-3"><button class="navbutton">Home</button></div>
-	<div class="col-sm-3"><button class="navbutton">About Me</button></div>
-	<div class="col-sm-3"><button class="navbutton">Projects</button></div>
-	<div class="col-sm-3"><button class="navbutton">Resume</button></div>
 
-</div>
+<body>
+
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-custom navbar-light">
+		  <a class="navbar-brand" href="./index.html"><h1 class="display-4">Lulu Ricketts</h1></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="./index.html"><h4>Home</h4></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><h4>About Me</h4></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><h4>Blog</h4></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><h4>Projects</h4></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="pages/resume.html"><h4>Resume</h4></a>
+		      </li>
+		    </ul>
+		    
+		  </div>
+		</nav>
+	</div>  <!-- END NAVBAR -->
+
+	<div class="jumbotron jumbotron-fluid jumbotron-custom">
+	  <div class="container text-center">
+	    <h1 class="display-3">Welcome to my page!</h1>
+	    <p class="lead">This website is all about me! Please feel free to check out my blog or projects pages to learn more about me. <br/> My favorite quote changes quite often, but here's my current favorite:</p>
+	    <div class="row justify-content-center">
+	    	<div class="col-md-11">
+			    <blockquote class="blockquote blockquote-custom">
+				    <p class="mb-0">Here's to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes ... the ones who see things differently -- they're not fond of rules, and they have no respect for the status quo. ... You can quote them, disagree with them, glorify or vilify them, but the only thing you can't do is ignore them because they change things. ... They push the human race forward, and while some may see them as the crazy ones, we see genius, because the people who are crazy enough to think that they can change the world, are the ones who do."</p>
+				    <footer class="font-weight-bold text-right">-Steve Jobs</footer>
+			    </blockquote>
+			</div>
+		</div>
+	  </div>
+	</div> <!-- END JUMBOTRON -->
+
+	<div class="container">
+		<div class="row justify-content-center aboutMain">
+			<div class="col-md-4 align-self-start">
+				<img src="images/portrait.jpg" alt="portrait" class="img-fluid portraitImg">
+			</div>
+			<div class="col-md-7 align-self-end mainBio">
+				<h1>Hi, I'm Lulu!</h1>
+				<p> I am in my third (and final) year of undergraduate at University of California-San Diego studying Cognitive Science with a specialization in Machine Learning/Neural Computation and a minor in Computer Science. I love immersing myself in environments where I can push and better myself, whether it be through academics, projects, activities, or creative outlets. Check out my About Me page to learn more!</p>
+			</div>
+		</div>
+	</div> <!-- END BIO PORTION -->
+
+	<div class="container text-center">
+		<h2 class=" display-4 explore-projects">Explore My Projects</h2>
+		<div class="row justify-content-center">
+			<div class="col-md-3 col-sm-5 container-img">
+				<img src="images/gtsrb.png" alt="gtsrb" class="img-fluid project-img">
+				<div class="overlay">
+				 	<a href="https://github.com/luluricketts/gtsrb_winter" target="_blank"><h2 class="text">Traffic Sign Recognition</h2></a>
+				 </div>
+			</div>
+			<div class="col-md-3 col-sm-5 container-img">
+				<img src="images/covid.png" alt="covid" class="img-fluid project-img">
+				<div class="overlay">
+				 	<a href="https://github.com/luluricketts/COVID19" target="_blank"><h2 class="text">COVID-19 Analysis</h2></a>
+				 </div>
+			</div>
+			<div class="col-md-3 col-sm-5 container-img">
+				<img src="images/no-gun.png" alt="gun" class="img-fluid project-img">
+				<div class="overlay">
+				 	<a href="https://github.com/luluricketts/GunViolenceAnalysis" target="_blank"><h2 class="text">Gun Violence Analysis</h2></a>
+				 </div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="jumbotron jumbotron-fluid jumbotron-custom-2">
+	  <div class="container text-center">
+		  <div class="row justify-content-center">
+				<div class="col-sm-11 text-center">
+					<p class="project-bio">I mainly enjoy working on data science projects, but lately I have been getting into back-end as well as web development (including this website!). Above are my latest three data science related projects, and feel free to navigate to my Projects page to get a comprehensive view of all my personal projects! </p>
+				</div>
+			</div>
+	  </div>
+	</div>
+
+
+
+
+
+	<div style="height:400px"></div>
+
+<!--
+	<div id="box1Main">
+		<div class="pageTitle"> Welcome to my page!</div>
+		<div class="pageSubtitle">
+			This website is all about me! Please feel free to check out my blog or projects pages to learn more about me. <br/> My favorite quote changes quite often, but here's my current favorite:
+		</div>
+		<div class="quote">
+			<p>  
+				"Here's to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes ... the ones who see things differently -- they're not fond of rules, and they have no respect for the status quo. ... You can quote them, disagree with them, glorify or vilify them, but the only thing you can't do is ignore them because they change things. ... They push the human race forward, and while some may see them as the crazy ones, we see genius, because the people who are crazy enough to think that they can change the world, are the ones who do." <br/> <span style="float:right; font-weight:bold;"> -Steve Jobs </span>
+			</p>
+		</div>
+		<div id="portrait">
+			<img id="homePortrait" src="images/portrait.jpg" width="300" height="300">
+		</div>
+	</div> 
+
+	<div class="mainBio">
+		<span id="hiLulu"> Hi, I'm Lulu! </span>
+		<br/>
+		<span> 
+			I am in my third (and final) year of undergraduate at University of California-San Diego studying Cognitive Science with a specialization in Machine Learning/Neural Computation and a minor in Computer Science. I love immersing myself in environments where I can push and better myself, whether it be through academics, projects, activities, or creative outlets. Check out my <a style="color:#fc5185;">About Me</a> page to learn more!
+		</span>
+	</div> 
+	<div class="mainProjects">
+		Explore My Projects
+	</div>
+	<div id="box2Main">
+		<div class="container">
+
+			  <img src="images/gtsrb.png" alt="Avatar" class="image" id="gtsrb">
+			  <div class="overlay">
+			    <div class="text">Hello World</div>
+			  </div>
+			
+
+			<img id="gtsrb" src="images/gtsrb.png" width="225" height="225">
+
+			<img id="covid" src="images/covid.png" width="225" height="225">
+			<img id="gun" src="images/GunAnalysis.png" width="225" height="225">
+	
+		</div>
+		<br/>
+		<div class="projectsMain"> 
+			I mainly enjoy working on data science projects, but lately I have been getting into full-stack development (including this website!). Above are my latest three projects employing data science techniques, and feel free to navigate to my <a style="color:#fc5185;">Projects</a> page to get a comprehensive view of all my personal projects!
+		</div>
+	</div>
+
+	<footer>
+		<div class="connect">
+			Connect with me!
+		</div>
+		<div class="footer">
+			Questions/etc email box here
+		</div>
+	</footer>
+-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

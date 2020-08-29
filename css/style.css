@@ -1,32 +1,456 @@
 body{
-	border: 30px solid black;
-	margin: 0px;
-	height: 1000px;
-}
-.navbar{
-	background-color: black;
-	border: 1px solid black;
-	border-bottom: 10px solid black;
-	border-radius: 0px;
-}
-.navbutton{
-	background-color: #c73000;
-	border: 2px solid #ffdf00;
-	text-align: center;
-	border-radius: 50%;
-	font-family: 'Niconne', cursive;
-	font-size: 120%;
-	width: 90%;
-}
-.navbutton:hover {
-	background-color: #ffdf00;
-	color: #c73000;
+	background-color: #f5f5f5;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	box-sizing: border-box;
 }
 
-h1{
+/* Navigation Bar */
+.navbar-custom {
+	background-color: #f5f5f5;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link {
 	font-family: 'Niconne', cursive;
-	text-align: center;
-	font-size: 400%;
-	color: #c73000;
+	color: #364f6b;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link {
+	margin-top: 15px;
+}
+
+.navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+	color: #3fc1c9;
+}
+
+/* Jumbotron */
+.jumbotron-custom {
+	background-color: #364f6b;
+	color: #f5f5f5;
+	padding-bottom: 120px;
+}
+
+.blockquote-custom {
+	border: 3px solid #fc5185;
+	border-radius: 5px;
+	font-size: .9rem;
+	padding: 5px;
+}
+
+/* Main Body */ 
+
+.portraitImg {
+	border: 3px solid #3fc1c9;
+	border-radius: 5px;
+	box-shadow: 5px 10px 8px #fc5185;
+}
+
+.explore-projects {
+	color: #fc5185;
+	margin-top: 70px;
 	margin-bottom: 20px;
 }
+
+.project-img {
+	border: 3px solid #fc5185;
+	border-radius: 5px;
+	margin-bottom: 20px;
+    
+}
+
+.jumbotron-custom-2 {
+	background-color: #3fc1c9;
+}
+
+.project-bio {
+	color: #f5f5f5;
+	font-size: 1.5rem;
+}
+
+
+
+
+/* RESPONSIVE ELEMENTS */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px) {
+	.jumbotron-custom {
+		padding-bottom: 270px;
+	}
+	.aboutMain {
+		margin-top: -270px;
+	} 
+	.mainBio {
+		font-size: 1.2rem;
+		margin-top: 50px;
+	}
+	.project-img {
+		height: 200px;
+		width: 200px;
+	}
+	.jumbotron-custom-2 {
+		padding-top: 590px;
+		margin-top: -560px;
+	}
+
+	.container-img {
+		position: relative;
+	}
+	.overlay {
+		width: 200px;
+		height: 50px;
+		background-color: #fc5185;
+		border-radius: 5px;
+		position: absolute;
+		left: 30%;
+		top: 68%;
+		opacity: .75;
+	}
+	.overlay h2 {
+		color: #f5f5f5;
+		font-size: 20px;
+		padding-top: 14px;
+	}
+	
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+	.jumbotron-custom {
+		padding-bottom: 290px;
+	}
+	.aboutMain {
+		margin-top: -290px;
+	} 
+	.mainBio {
+		font-size: 1.2rem;
+		margin-top: 50px;
+	}
+	.jumbotron-custom-2 {
+		padding-top: 360px;
+		margin-top: -340px;
+	}
+
+	.container-img {
+		position: relative;
+	}
+	.overlay {
+		width: 195px;
+		height: 50px;
+		background-color: #fc5185;
+		border-radius: 5px;
+		position: absolute;
+		left: 15px;
+		top: 68%;
+		opacity: .75;
+	}
+	.overlay h2 {
+		color: #f5f5f5;
+		font-size: 20px;
+		padding-top: 14px;
+	}
+	
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.jumbotron-custom {
+		padding-bottom: 80px;
+	}
+	.aboutMain {
+		margin-top: -80px;
+	} 
+	.mainBio {
+		font-size: .9rem;
+		margin-top: 50px;
+	}
+	.jumbotron-custom-2 {
+		padding-top: 130px;
+		margin-top: -100px;
+	}
+
+	.container-img {
+		position: relative;
+	}
+	.overlay {
+		width: 150px;
+		height: 40px;
+		background-color: #fc5185;
+		border-radius: 5px;
+		position: absolute;
+		left: 15px;
+		top: 65%;
+		opacity: .75;
+	}
+	.overlay h2 {
+		color: #f5f5f5;
+		font-size: 17px;
+		padding-top: 10px;
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.jumbotron-custom {
+		padding-bottom: 100px;
+	}
+	.aboutMain {
+		margin-top: -80px;
+	} 
+	.mainBio {
+		font-size: 1rem;
+		margin-top: 40px;
+	}
+	.jumbotron-custom-2 {
+		padding-top: 150px;
+		margin-top: -130px;
+	}
+
+	.container-img {
+		position: relative;
+		width: 210px;
+		height: 210px;
+		cursor: pointer;
+	}
+	.container-img:hover .overlay {
+		width: 210px;
+	}
+	.container-img img {
+		display: block;
+	}
+	.overlay {
+		height: 210px;
+		width: 0px;
+		background-color: #fc5185;
+		position: absolute;
+		border-radius: 5px;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		transition: 0.4s ease;
+		opacity: .75;
+	}
+	.overlay h2 {
+		color: #f5f5f5;
+		font-size: 30px;
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.jumbotron-custom {
+		padding-bottom: 120px;
+	}
+	.aboutMain {
+		margin-top: -130px;
+	} 
+	.mainBio {
+		font-size: 1.2rem;
+		margin-top: 40px;
+	}
+	.jumbotron-custom-2 {
+		padding-top: 170px;
+		margin-top: -150px;
+	}
+
+
+	.container-img {
+		position: relative;
+		width: 255px;
+		height: 255px;
+		cursor: pointer;
+	}
+	.container-img:hover .overlay {
+		width: 255px;
+	}
+	.container-img img {
+		display: block;
+	}
+	.overlay {
+		height: 255px;
+		width: 0px;
+		background-color: #fc5185;
+		position: absolute;
+		border-radius: 5px;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		transition: 0.4s ease;
+		opacity: .75;
+	}
+	.overlay h2 {
+		color: #f5f5f5;
+		font-size: 40px;
+	}
+
+
+}
+
+/* Main Body 
+#box1Main {
+	background-color: #364f6b;
+	height: 460px;
+	padding-top: 50px;
+}
+
+.pageTitle {
+	font-size: 400%;
+	font-weight: bold;
+	color: #f5f5f5;
+	text-align: center;
+}
+
+.pageSubtitle {
+	font-size: 200%;
+	color: #f5f5f5;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.quote {
+	margin: auto;
+	width: 75%;
+	height: 110px;
+	border: 3px solid #fc5185;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #f5f5f5;
+	font-size: 120%;
+}
+
+#portrait {
+	text-align: left;
+	margin-top: 40px;
+	margin-left: 180px;
+}
+
+#homePortrait {
+	border: 3px solid #3fc1c9;
+	box-shadow: 5px 10px 8px #fc5185;
+	border-radius: 5px;
+}
+
+.mainBio {
+	margin-left: 35%;
+	margin-right: 180px;
+	color: #364f6b;
+	margin-top: 20px;
+	font-size: 150%;
+}
+
+#hiLulu {
+	font-size: 170%;
+}
+
+.mainProjects {
+	font-size: 300%;
+	color: #fc5185;
+	text-align: center;
+	margin-top: 70px;
+}
+
+#box2Main {
+	background-color: #3fc1c9;
+	margin-top: 90px;
+	text-align: center;
+	font-size: 21px;
+	color: #f5f5f5;
+}
+
+.projectsMain {
+	margin-left: 180px;
+	margin-right: 180px;
+}
+
+#gtsrb, #covid, #gun {
+	border: 3px solid #fc5185;
+	border-radius: 5px;
+	margin-top: -65px;
+}
+
+#gtsrb, #covid {
+	margin-right: 100px;
+}
+
+
+
+/*
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 225px;
+  height: 225px;
+}
+
+.overlay {
+  position: absolute;
+  margin-top: -65px;
+  bottom: 120%;
+  left: 20px;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 32%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+*/ /*thinking about redoing this with react*/
+
+/* Resume Page
+.resumeBG {
+	background-color: #364f6b;
+	text-align: center;
+	padding: 40px;
+	height: 1500px;
+}
+
+#resume {
+	border: 3px solid #fc5185;
+	border-radius: 5px;
+}
+
+
+/* Footer 
+.connect {
+	background-color: #3fc1c9;
+	margin-top: 500px;
+	color: #f5f5f5;
+	text-align: center;
+	height: 40px;
+}
+
+.footer {
+	background-color: #364f6b;
+	color: #f5f5f5;
+	text-align: center;
+	height: 50px;
+}
+*/
