@@ -1,38 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Lulu Ricketts</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/2bd352ad74.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div class="navbar">
-	<h1> <a href="../index.html"> Lulu Ricketts </a></h1>
 
-	<a class="navbutton">Resume</a>
-	<a class="navbutton">Projects</a>
-	<a class="navbutton">Blog</a>
-	<a class="navbutton">About Me</a>
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-custom navbar-light">
+		  <a class="navbar-brand" href="../index.html"><h1 class="display-4 navbar-name">Lulu Ricketts</h1></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
 
-</div>
+		  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="../index.html"><h4>Home</h4></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><h4>About Me</h4></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><h4>Blog</h4></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><h4>Projects</h4></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link active" href="pages/resume.html"><h4>Resume</h4></a>
+		      </li>
+		    </ul>
+		    
+		  </div>
+		</nav>
+	</div>  <!-- END NAVBAR -->
 
-<div class="resumeBG">
-	<div class="pageTitle">Resume</div>
-	<div class="pageSubtitle">For a more in depth explanation of my experiences and projects, visit my <a style="color:#fc5185">blog</a> and <a style="color:#fc5185">projects</a> pages, respectively!</div>
-	<img id="resume" src="/images/Resume_Lulu_Ricketts.pdf" width="68%" height="90%"></img>
-</div>
-
-<footer>
-	<div class="connect">
-		Connect with me!
+	<div class="container-fluid text-center resume">
+		<h1 class="display-3">Resume</h1>
+		<p class="h3"> To get a more in depth look at my projects and experiences, check out my <a href="">Projects</a> and <a href="">Blog</a> pages, respectively!</p>
+		<object data="../images/Resume_Lulu_Ricketts.pdf" type="application/pdf" width="75%" height="800px"> 
+  			<p>It appears you don't have a PDF plugin for this browser.
+  			 	No biggie... you can <a href="../images/Resume_Lulu_Ricketts.pdf">click here to download the PDF file.</a></p>  
+		</object>
 	</div>
-	<div class="footer">
-		Questions/etc email box here
-	</div>
-</footer>
 
+	<div class="container-fluid text-center footer">
+		<div class="container">
+			<h2 class="display-4"> Connect With Me! </h2>
+			<div class="row justify-content-center">
+				<div class="col-sm-6 icon-row">
+					<a href="https://github.com/luluricketts" target="_blank" class="icon" title="Github">
+						<i class="fab fa-github fa-3x"></i>
+					</a>
+					<a href="https://www.facebook.com/lulu.ricketts" target="_blank" class="icon" title="Facebook">
+						<i class="fab fa-facebook fa-3x"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/lulu-ricketts" target="_blank" class="icon" title="LinkedIn">
+						<i class="fab fa-linkedin fa-3x"></i>
+					</a>
+					<a href="mailto: lulu.ricketts@gmail.com" class="icon" title="Email">
+						<i class="fas fa-envelope fa-3x"></i>
+					</a>
+					<a href="tel:908-500-9773" class="icon" title="Github">
+						<i class="fas fa-phone-alt fa-3x"></i>
+					</a>
+				</div>
+				<div class="col-sm-6 text-left icon-text">
+					<p class="h5">I'm always looking to learn new things and form new connections! Feel free to reach out to me to talk about anything from project ideas to recommended readings!</p>
+				</div>
+			</div>
+			<p class="h6 text-center copyright">Lulu Ricketts <i class="far fa-copyright fa-xs"></i> 2020 </p>
+		</div>
+	</div> <!-- END FOOTER -->
 
 </body>
 </html>
