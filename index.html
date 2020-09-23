@@ -8,6 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/2bd352ad74.js" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
@@ -34,9 +35,6 @@
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#"><h4>Projects</h4></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="pages/resume.html"><h4>Resume</h4></a>
 		      </li>
 		    </ul>
 		    
@@ -104,7 +102,224 @@
 			</div>
 	  </div>
 	</div>
+ 
+	<div class="container-fluid education-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 align-self-center">
+					<h2 class="display-4 text-center edu-text">Education</h2> 
+				</div>
+				<div class="col-sm-6 edu-main-text text-right">
+					<h3 class="edu-header">University of California-San Diego <small class="text-muted">(2018-2021)</small></h3>
+					<p>B.S. Cognitive Science - Machine Learning and Neural Computation <br> Minor: Computer Science</p>
+					<h3 class="edu-header">MOOCs <small class="text-muted"> (Massive Open Online Courses) </small> </h3>
+					<p>Deep Learning <small> deeplearning.ai </small> </p>
+					<p>IBM Data Science <small> IBM </small> 
+						<a href="./images/IBMDS.pdf" target="_blank"><i class="fas fa-external-link-alt fa-sm" style="padding-left: 1rem"></i></a>
+					</p>
+					<p>HTML, CSS, and Javascript for Web Developers <small> JHU </small>
+						<a href="./images/HTML.pdf" target="_blank"><i class="fas fa-external-link-alt fa-sm" style="padding-left: 1rem"></i></a>
+					</p>
+					<p>AI Foundations <small> IBM </small>
+						<a href="./images/AI4E.pdf" target="_blank"><i class="fas fa-external-link-alt fa-sm" style="padding-left: 1rem"></i></a>
+					</p>
+					<p>Python for Everybody <small> U Mich. </small>
+						<a href="./images/PY4E.pdf" target="_blank"><i class="fas fa-external-link-alt fa-sm" style="padding-left: 1rem"></i></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="container-fluid experience-main">
+		<div class="container experience-main-inner text-center">
+			<div id="prof"> 
+				<h2 class="display-4 experience-text">
+					<i  class="fas fa-angle-left" style="padding-right: 20px" 
+						onclick="toggleSlide('prof', 'l')"></i>
+					Professional Experience 
+					<i 	class="fas fa-angle-right" style="padding-left: 20px"
+						onclick="toggleSlide('prof', 'r')"></i>
+				</h2>
+				<div class="experience-item"> 
+					<h3>Software Engineer Intern <br><small class="text-muted">Scripps Research Institute (June 2020 - Sept. 2020)</small></h3>
+					<p>During this remote internship, I worked on full-stack component of the BiothingsExplorer project.  This included implementing filters for the back-end Python client to reduce results from over 9000 to 50 most meaningful items. I also updated the front-end UI to allow for more user interaction and increased responsiveness using ReactJS.</p>
+				</div>
+				<div class="experience-item"> 
+					<h3>Research Intern <br><small class="text-muted">Enrich at Qualcomm Institute UCSD (Oct. 2020 - March. 2021)</small></h3>
+					<p>This internship's focus is on complex systems research methods for a changing planet. My duties include taking classes on how complex systems affect industry today and how to apply research and data mining to approach questions and problems that arise from those systems.</p>
+				</div>
+				<div class="experience-item"> 
+					<h3>Data Science Research Assistant <br><small class="text-muted">UCSD Voytek Lab (Feb. 2020 - Present)</small></h3>
+					<p>I work in a team to analyze data from the cognitive game app Lumosity and collaborate using git version control. Responsibilities include cleaning and analysis of data, writing functions to map onto similar but novel datasets, and statistical analyses: t-tests, ANOVA tests, goodness of fit models, and pearson r correlation analyses.</p>
+				</div>
+				<div class="experience-item"> 
+					<h3>Research Assistant <br><small class="text-muted">UCSD Brady Lab (Sept. 2018 - Feb. 2020)</small></h3>
+					<p>Conducted psychology research experiments, running over 100 participants for research studies relating to vision and memory capacities. Used MATLAB and R for data collection and analyses.</p>
+				</div>
+				<div class="experience-item"> 
+					<h3>Research Associate <br><small class="text-muted">Rutgers University, Waksman Institute of Microbiology (June 2017)</small></h3>
+					<p>Participated in this 2-week summer program at Rutgers.  Conducted extraction and analysis of DNA sequences of Landoltia punctata using DNA purification, restriction digests, and gel electrophoresis to determine functionality of genes. View 5 published sequences on the National Center for Biotechnology Information database.</p>
+				</div>
+			</div>
+			<div id="vol">
+				<h2 class="display-4 experience-text">
+					<i 	class="fas fa-angle-left" style="padding-right: 20px"
+						onclick="toggleSlide('vol', 'l')"></i>
+					Volunteer Experience 
+					<i 	class="fas fa-angle-right" style="padding-left: 20px"
+						onclick="toggleSlide('vol', 'r')"></i>
+				</h2>
+				<div class="experience-item"> 
+					<h3>Orphanage Volunteer <br><small class="text-muted">Volunteering Solutions (July 2018 - Aug. 2018)</small></h3>
+					<p>Guided beginner English courses for 6-10 year old children in Love Angel's Orphanage, Arusha, Tanzania. Assisted in the design of projects, including a water tower to be built for safe transport of clean water for the children.</p>
+				</div>
+				<div class="experience-item"> 
+					<h3>Teacher's Assistant <br><small class="text-muted">Murray Hill Chinese School (Sept. 2015 - June 2017) </small></h3>
+					<p>I coordinated and facilitated lesson plans for the teacher in English and Mandarin for 8-10 year old students. Also organized class schedules and events to increase engagement of the students.</p>
+				</div>
+				<div class="experience-item"> 
+					<h3>Summer Camp Instructor <br><small class="text-muted">Volunteer Service Overseas Program (July 2015)</small></h3>
+					<p>Led summer camp children in New Taipei, Taiwan aged from 9-12. Responsibilities included creating lesson plans, organizing schedules, and leading classroom discussions and activities in English. </p>
+				</div>
+			</div>
+			<div id="lead"> 
+				<h2 class="display-4 experience-text">
+					<i 	class="fas fa-angle-left" style="padding-right: 20px"
+						onclick="toggleSlide('lead', 'l')"></i>
+					Leadership Experience 
+					<i 	class="fas fa-angle-right" style="padding-left: 20px"
+						onclick="toggleSlide('lead', 'r')"></i>
+				</h2>
+				<div class="experience-item"> 
+					<h3>Projects Manager <br><small class="text-muted">Data Science Student Society at UCSD (Feb. 2020 - Present) </small></h3>
+					<p>Assist in leading the Projects Committee of DS3 along with collaboration with the Halicioglu Data Science Institute (HDSI). We plan quarterly data science projects for undergraduate students to gain real-world experience working with datasets and their applications. Currently communicating with local businesses for partnerships to search for novel data availability.</p>
+				</div>
+				<div class="experience-item"> 
+					<h3>Undergraduate Instructional Assistant <br><small class="text-muted">UCSD Cognitive Science (Oct. 2020 - Present)</small></h3>
+					<p>Currently an IA for Professor Eran Mukamel's COGS 118C course: Neural Signal Processing.</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="container-fluid skills-main"> 
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2 class="display-4">Skills</h2>
+					<p class="skills-subtext"> (<i class="fas fa-circle-notch skill-icon skill-icon-prof"></i> = proficient, <i class="fas fa-circle-notch skill-icon skill-icon-inter"></i> = intermediate, <i class="fas fa-circle-notch skill-icon skill-icon-beg"></i> = beginner) </p>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-3">
+					<h3 class="skills-header">Languages</h3>
+					<ul class="list-group-custom">
+						<li class="skills-item">
+							<i class="fas fa-circle-notch skill-icon skill-icon-prof"></i>Python
+						</li>
+						<li class="skills-item">
+							<i class="fas fa-circle-notch skill-icon skill-icon-prof"></i>HTML/CSS/Javascript
+						</li>
+						<li class="skills-item">
+							<i class="fas fa-circle-notch skill-icon skill-icon-inter"></i>Java
+						</li>
+						<li class="skills-item">
+							<i class="fas fa-circle-notch skill-icon skill-icon-beg"></i>C/C++
+						</li>
+						<li class="skills-item">
+							<i class="fas fa-circle-notch skill-icon skill-icon-beg"></i>MATLAB
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<h3 class="skills-header">Libraries/Frameworks</h3>
+					<div class="row">
+						<div class="col-sm-4">
+							<ul class="list-group-custom">
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-prof"></i>ReactJS
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-inter"></i>NodeJS
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-inter"></i>requests
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-inter"></i>Bootstrap
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-inter"></i>Semantic-UI
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="list-group-custom">
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-prof"></i>pandas
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-prof"></i>numpy
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-prof"></i>matplotlib/seaborn
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-prof"></i>Sci-kit Learn
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-inter"></i>PyTorch
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="list-group-custom">
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-beg"></i>geopy/folium maps
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-inter"></i>Scipy
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-beg"></i>OpenCV
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-inter"></i>NetworkX
+								</li>
+								<li class="skills-item2">
+									<i class="fas fa-circle-notch skill-icon skill-icon-inter"></i>LINUX/UNIX
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-3">
+					<h3 class="skills-header">Tools/Other</h3>
+					<ul class="list-group-custom">
+						<li class="skills-item">
+							<i class="fas fa-circle-notch skill-icon skill-icon-prof"></i>git
+						</li>
+						<li class="skills-item">
+							<i class="fas fa-circle-notch skill-icon skill-icon-inter"></i>JSON/XML
+						</li>
+						<li class="skills-item">
+							<i class="fas fa-circle-notch skill-icon skill-icon-beg"></i>Unit Testing
+						</li>
+						<li class="skills-item">
+							<i class="fas fa-circle-notch skill-icon skill-icon-inter"></i>SQL, SQLite
+						</li>
+						<li class="skills-item">
+							<i class="fas fa-circle-notch skill-icon skill-icon-beg"></i>bash scripting
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- BEGIN FOOTER -->
 	<div class="container-fluid text-center footer">
 		<div class="container">
 			<h2 class="display-4"> Connect With Me! </h2>
