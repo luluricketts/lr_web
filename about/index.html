@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Lulu Ricketts</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/2bd352ad74.js" crossorigin="anonymous"></script>
+	<script src="../js/script.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-fluid text-center resume-header">
+        <h1><a href="../index.html">Lulu Ricketts</a></h1>
+        <div class="container" id="resume-nav">
+            <ul class="nav nav-pills nav-fill nav-custom">
+                <li class="nav-item">
+                    <a class="nav-link notpage" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link onpage" href="./index.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link notpage" href="../projects/index.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link notpage" href="../blog/index.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link notpage" href="../resume/index.html">Resume</a>
+                </li>
+              </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row about1">
+            <div class="col-md-3 align-self-center box1"></div>
+            <div class="col-md-5 align-self-center box2">
+                <img src="../images/portrait-about.jpg" >
+            </div>
+            <div class="col-md-4 align-self-center about-about">
+                <h2>About me</h2>
+                <p>Hey! I'm Lulu and I'm an undergraduate student at UC San Diego studying Cognitive Science (specializing in Machine Learning) and minoring in Computer Science. I aim to use human intelligence as a basis for delivering meaningful AI solutions that will positively impact various communities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center about2">
+        <h2>my passions</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-3 about-passion">
+                    <p>sustainability</p>
+                    <img src="../images/tree.png" style="height: 250px; width: 150px">
+                </div>
+                <div class="col-xs-3 about-passion">
+                    <p>education</p>
+                    <img src="../images/book.png" style="height: 225px; width: 225px">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <p>
+                        Sustainability, whether it be through autonomous electric vehicles that will reduce our carbon emissions or tracking our energy consumption, is crucial to slowing down the effects of climate change, and there is much potential for AI to take on these issues. 
+                        My interest in education arose after I volunteered as an educator in Taiwan and Tanzania, and seeing the disparities in the quality of education many children around the world receive motivated me to wonder what can be done. Through software and AI, I hope to play a role in combatting these and similar issues.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center about3">
+        <div class="container">
+            <h2>my skills</h2>
+            <div class="row">
+                <div class="col-md-4 about-skill">
+                    <div class="inner" id="inner-DS">
+                        <h3>Data Science</h3>
+                        <button id="btn-DS" type="button" class="btn btn-primary btn-custom-about">Learn more</button>
+                        <p id="about-DS">Many of my projects have been data science/machine learning related and mainly done in Python working with pandas, numpy, sklearn, and visualization tools such as seaborn, matplotlib, and plotly. I've worked with various probability distribution and estimation methods (including Bayesian inference) and worked with deep learning libraries Pytorch and Tensorflow as well.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 about-skill">
+                    <div class="inner" id="inner-SW">
+                        <h3>Software/Web</h3>
+                        <button id="btn-SW" type="button" class="btn btn-primary btn-custom-about">Learn more</button>
+                        <p id="about-SW">I got exposure to software through courses and internships, where I really enjoyed seeing how pieces of projects fit together and how to test those various components. Though I have some experience in Java/C/C++ for backend development, I like working on some web development as well (like this website!) using HTML/CSS/Javascript and some ReactJS. See more about this website on my projects page!</p>
+                    </div>    
+                </div>
+                <div class="col-md-4 about-skill">
+                    <div class="inner" id="inner-R">
+                        <h3>Research</h3>
+                        <button id="btn-R" type="button" class="btn btn-primary btn-custom-about">Learn more</button>
+                        <p id="about-R">I believe that research is essential to gaining a holistic understanding of any subject and the ongoing work around it, allowing us to accumulate those findings to produce new innovations. I've worked at a couple research labs at UCSD and outside, and I'm always eager to hear about others' works and projects so that I can better approach my areas of interest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center footer">
+        <h3>Connect with me!</h3>
+        <p id="icons">
+            <a href="https://www.linkedin.com/in/lulu-ricketts" target="_blank" class="icon" title="LinkedIn">
+                <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+            <a href="https://github.com/luluricketts" target="_blank" class="icon" title="Github">
+                <i class="fab fa-github fa-3x"></i>
+            </a>
+            <a href="https://www.facebook.com/lulu.ricketts" target="_blank" class="icon" title="Facebook">
+                <i class="fab fa-facebook fa-3x"></i>
+            </a>
+            <a href="mailto: lulu.ricketts@gmail.com" class="icon" title="Email">
+                <i class="fas fa-envelope fa-3x"></i>
+            </a>
+            <a href="tel:908-500-9773" class="icon" title="Github">
+                <i class="fas fa-phone-alt fa-3x"></i>
+            </a>
+        </p>
+        <p class="h6 text-center copyright">Lulu Ricketts <i class="far fa-copyright fa-xs"></i> 2020 </p>
+    </div>
+</body>
+</html>
